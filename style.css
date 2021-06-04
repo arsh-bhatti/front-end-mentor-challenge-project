@@ -36,32 +36,34 @@ body{
     font-size: 15px;
     
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    margin-top:2em;
+    
+}
 .box1{
     background-color:var(--bright-orange) ;
     width: 376px;
-    height: 90vh;
+    height: 75vh;
     border-radius: .85em 0 0 .85em;
     
 }
 .box2{
     background-color: var(--dark-cyan);
-    height: 90vh;
+    height: 75vh;
     width: 376px;
 }
 .box3{
     background-color: var(--very-dark-cyan);
     width: 376px;
-    height: 90vh;
+    height: 75vh;
     border-radius: 0 .85em .85em 0;
 
 }
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    
-}
+
 .btn{
     background-color: white;
     position: relative;
@@ -97,8 +99,8 @@ body{
 .attribution { 
     font-size: 11px;
      text-align:center;
-     position:sticky;
-     /* bottom: -3em; */
+     position:fixed;
+     bottom:0;
      padding-top: 1em ;
      padding-bottom: 1.5em;
      background-color: rgb(11, 11, 44);
