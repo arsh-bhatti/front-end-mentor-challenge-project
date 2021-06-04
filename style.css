@@ -38,19 +38,21 @@ body{
 }
 .box1{
     background-color:var(--bright-orange) ;
-    max-width: 375px;
+    width: 376px;
     height: 90vh;
+    border-radius: .85em 0 0 .85em;
     
 }
 .box2{
     background-color: var(--dark-cyan);
     height: 90vh;
-    max-width: 375px;
+    width: 376px;
 }
 .box3{
     background-color: var(--very-dark-cyan);
-    max-width: 375px;
+    width: 376px;
     height: 90vh;
+    border-radius: 0 .85em .85em 0;
 
 }
 .container{
@@ -79,35 +81,47 @@ body{
     color: var(--very-dark-cyan);
 }
 .btn1:hover{
-    color: white;
-    background-color: var(--bright-orange);
+     background-color: var(--bright-orange);
 }
 .btn2:hover{
-    color: white;
     background-color: var(--dark-cyan);
 }
 .btn3:hover{
-    color: white;
     background-color: var(--very-dark-cyan);
+}
+.btn:hover{
+    color: white;
+    font-size: 0.8em;
+    cursor: pointer;
 }
 .attribution { 
     font-size: 11px;
      text-align:center;
-     position: sticky;
-     bottom:0;
+     position:sticky;
+     /* bottom: -3em; */
      padding-top: 1em ;
      padding-bottom: 1.5em;
-     background-color: #ccc;
+     background-color: rgb(11, 11, 44);
+     color: white;
      width: 100%;
      }
     .attribution a {
-         color: hsl(228, 45%, 44%);
+         color: hsl(228, 67%, 63%);
          text-decoration: none;
          }
+         .attribution a:hover {
+             color: white;
+             cursor: pointer;
+            
+            }
          @media only screen and (max-width:375px) {
              .container{
                  flex-wrap: wrap;
              }
-             
-             
+             .box1{
+             border-radius: .85em .85em 0 0;
+             }
+             .box3{
+                 border-radius: 0 0 .85em .85em;
+             }
          }
