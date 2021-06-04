@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root{
+    --verylightgray: hsl(0, 0%, 95%);
+    --bright-orange:hsl(31, 77%, 52%);
+    --dark-cyan:hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white:hsla(0, 0%, 100%, 0.75);
+}
+h1{
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    color: var(--verylightgray);
+    position: relative;
+    left: -2em;
+}
+p{
+    font-family: 'Lexend Deca';
+    color: var(--transparent-white);
+}
+h1,
+p,
+svg,
+.btn{
+    
+    margin:2em 4em 0 4em;
+
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:var(--verylightgray);
+    font-size: 15px;
+    
+}
+.box1{
+    background-color:var(--bright-orange) ;
+    max-width: 375px;
+    height: 90vh;
+    
+}
+.box2{
+    background-color: var(--dark-cyan);
+    height: 90vh;
+    max-width: 375px;
+}
+.box3{
+    background-color: var(--very-dark-cyan);
+    max-width: 375px;
+    height: 90vh;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+.btn{
+    background-color: white;
+    position: relative;
+    top: 3em;
+    height: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 1.5em;
+}
+.btn1{
+    color: var(--bright-orange);
+}
+.btn2{
+    color: var(--dark-cyan);
+}
+.btn3{
+    color: var(--very-dark-cyan);
+}
+.btn1:hover{
+    color: white;
+    background-color: var(--bright-orange);
+}
+.btn2:hover{
+    color: white;
+    background-color: var(--dark-cyan);
+}
+.btn3:hover{
+    color: white;
+    background-color: var(--very-dark-cyan);
+}
+.attribution { 
+    font-size: 11px;
+     text-align:center;
+     position: sticky;
+     bottom:0;
+     padding-top: 1em ;
+     padding-bottom: 1.5em;
+     background-color: #ccc;
+     width: 100%;
+     }
+    .attribution a {
+         color: hsl(228, 45%, 44%);
+         text-decoration: none;
+         }
+         @media only screen and (max-width:375px) {
+             .container{
+                 flex-wrap: wrap;
+             }
+             
+             
+         }
